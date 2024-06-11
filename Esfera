@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+  
+double pi = 3.14159;
+double volumeEsfera;
+double raio;
+double raio3;
+  
+scanf("%lf", &raio);
+  
+raio3= raio*raio*raio;  
+  
+volumeEsfera= (4.0/3) * pi * raio3;
+
+printf("VOLUME = %.3lf\n", volumeEsfera);
+  
+
+  
+  return 0;
+
+
+}

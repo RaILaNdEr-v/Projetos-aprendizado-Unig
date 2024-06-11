@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+
+int velocidade1, velocidade2, tempo, distancia;
+velocidade1= 60;
+velocidade2= 90;
+
+scanf("%d", &distancia);
+
+tempo= distancia * 2;
+
+printf("%d minutos\n", tempo);
+
+
+
+
+
+  
+  return 0;
+
+
+}

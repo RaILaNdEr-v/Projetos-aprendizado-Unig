@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+  
+int codigoPeca, quantidadePeca;
+double valorPeca;
+
+int codigoPeca2, quantidadePeca2;
+double valorPeca2;
+
+double totalPecas;
+
+scanf("%d %d %lf", &codigoPeca, &quantidadePeca, &valorPeca);
+scanf("%d %d %lf", &codigoPeca2, &quantidadePeca2, &valorPeca2);
+
+totalPecas= (quantidadePeca*valorPeca)+(quantidadePeca2*valorPeca2);
+
+
+printf("VALOR A PAGAR: R$ %.2lf\n", totalPecas);
+  
+  return 0;
+
+
+}

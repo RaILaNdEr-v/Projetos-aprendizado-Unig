@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+  
+char nomeVendedor[20];
+double salarioFixo;
+double totalVendas;
+double salarioComBonus;
+
+scanf("%19s", &nomeVendedor);
+scanf("%lf", &salarioFixo);
+scanf("%lf", &totalVendas);
+
+salarioComBonus = salarioFixo + (totalVendas * 0.15);
+  
+  
+printf ("TOTAL = R$ %.2lf\n", salarioComBonus);
+  
+  return 0;
+
+
+}
