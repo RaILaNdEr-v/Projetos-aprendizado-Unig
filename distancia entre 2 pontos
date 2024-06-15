@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+double a1, b1;
+double a2, b2;
+
+scanf("%lf %lf", &a1, &b1);
+scanf( "%lf %lf", &a2, &b2);
+
+double distancia = sqrt(pow(a2-a1, 2) + pow(b2-b1, 2));
+
+printf("%.4lf\n", distancia);
+  return 0;
+}

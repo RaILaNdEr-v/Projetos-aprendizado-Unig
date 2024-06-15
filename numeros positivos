@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    double valor;
+    int count = 0;
+
+    for (int i = 0; i < 6; i++) {
+        scanf("%lf", &valor);
+        if (valor > 0) {
+            count++;
+        }
+    }
+    printf("%d valores positivos\n", count);
+
+    return 0;
+}

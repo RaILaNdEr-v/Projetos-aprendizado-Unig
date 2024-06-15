@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main(){
+
+
+int valor1, valor2;
+
+char operador;
+
+int valorResultante;
+
+scanf("%d %c %d", &valor1, &operador, &valor2);
+
+if(operador == '+'){
+  
+valorResultante = valor1 + valor2;
+}
+
+if (operador == 'x'){
+
+valorResultante = valor1 * valor2;
+}
+
+if(operador == '-'){
+
+valorResultante = valor1 - valor2;
+}
+
+if(operador == '/'){
+
+valorResultante = valor1 / valor2;
+}
+
+printf("= %d\n", valorResultante);
+
+  printf ("\n\n\n\nMadeByRaILaNdEr");
+
+  return 0;
+
+
+}

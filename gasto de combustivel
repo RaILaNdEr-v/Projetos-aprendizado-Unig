@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+int main() {
+
+  int kmLitro=12;
+  int horaViagem;
+  scanf ("%d", &horaViagem);
+
+  int velocidadeMedia;
+  scanf ("%d", &velocidadeMedia);
+
+  double distancia= horaViagem*velocidadeMedia;
+  double combustivelGasto= distancia/kmLitro;
+
+  printf("%.3f\n", combustivelGasto);
+
+  
+  
+  return 0;
+}

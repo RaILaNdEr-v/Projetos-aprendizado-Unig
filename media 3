@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    double N1, N2, N3, N4, media, exame, media_final;
+    char resultado[100]; 
+
+    scanf("%lf %lf %lf %lf", &N1, &N2, &N3, &N4);
+
+    media = (N1*2 + N2*3 + N3*4 + N4*1) / 10.0;
+
+    if (media >= 7.0) {
+        sprintf(resultado, "Media: %.1lf\nAluno aprovado.\n", media);
+    } else if (media < 5.0) {
+        sprintf(resultado, "Media: %.1lf\nAluno reprovado.\n", media);
+    } else {
+        sprintf(resultado, "Media: %.1lf\nAluno em exame.\n", media);
+
+        scanf("%lf", &exame);
+        sprintf(resultado + strlen(resultado), "Nota do exame: %.1lf\n", exame);
+
+        media_final = (media + exame) / 2.0;
+
+        if (media_final >= 5.0) {
+            sprintf(resultado + strlen(resultado), "Aluno aprovado.\nMedia final: %.1lf\n", media_final);
+        } else {
+            sprintf(resultado + strlen(resultado), "Aluno reprovado.\nMedia final: %.1lf\n", media_final);
+        }
+    }
+
+    printf("%s", resultado);
+
+    return 0;
+}
